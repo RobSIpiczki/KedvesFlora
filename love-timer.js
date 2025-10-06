@@ -31,11 +31,13 @@ function updateTimer(simDate = null) {
 function moveAirplane(progress) {
     const point = path.getPointAtLength(progress * pathLength);
 
-    const scaleX = container.clientWidth / svg.viewBox.baseVal.width;
-    const scaleY = container.clientHeight / svg.viewBox.baseVal.height;
+    // Map SVG coordinates to container coordinates
+    const svgRect = svg.getBoundingClientRect();
+    const xScale = svgRect.width / svg.viewBox.baseVal.width;
+    const yScale = svgRect.height / svg.viewBox.baseVal.height;
 
-    const x = point.x * scaleX;
-    const y = point.y * scaleY;
+    const x = point.x * xScale;
+    const y = point.y * yScale;
 
     // Tangent for rotation (1% of path length)
     const deltaLength = pathLength * 0.01;
@@ -43,8 +45,8 @@ function moveAirplane(progress) {
     if (nextLength > pathLength) nextLength = pathLength;
 
     const nextPoint = path.getPointAtLength(nextLength);
-    const nextX = nextPoint.x * scaleX;
-    const nextY = nextPoint.y * scaleY;
+    const nextX = nextPoint.x * xScale;
+    const nextY = nextPoint.y * yScale;
 
     const angle = Math.atan2(nextY - y, nextX - x) * (180 / Math.PI);
 
@@ -60,8 +62,7 @@ function animate() {
     const elapsed = now - startDate;
 
     let progress = elapsed / totalTime;
-    if (progress < 0) progress = 0;
-    if (progress > 1) progress = 1;
+    progress = Math.max(0, Math.min(1, progress));
 
     moveAirplane(progress);
     updateTimer();
@@ -76,8 +77,7 @@ function simulateFlight(simDate) {
     const elapsed = now - startDate;
 
     let progress = elapsed / totalTime;
-    if (progress < 0) progress = 0;
-    if (progress > 1) progress = 1;
+    progress = Math.max(0, Math.min(1, progress));
 
     moveAirplane(progress);
     updateTimer(simDate); // show timer as if it were that day
@@ -85,6 +85,3 @@ function simulateFlight(simDate) {
 
 // Start real-time animation
 animate();
-
-// Preview airplane and timer on October 20th
-//simulateFlight("2025-10-20T12:00:00"); 
