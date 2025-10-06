@@ -47,7 +47,7 @@ h2{font-size: 2em; margin-bottom: -5%}
 #budapest-vector{
     position: absolute; 
     width: 150px; 
-    right: -70px; top: 120%; 
+    right: -70px; top: 130%; 
     transform: translateY(-50%);}
 #berlin-vector{
     position: absolute; 
@@ -63,6 +63,7 @@ h2{font-size: 2em; margin-bottom: -5%}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
 
 
 
