@@ -16,6 +16,7 @@ box-shadow: 10px 10px;}
 font-size: 2em;
 font-weight: bold;}
 
+h2{font-size:2em;}
 /*PROGRESS BAR*/
 
 #progress-container{position: relative;
@@ -63,3 +64,4 @@ overflow:visible;}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
