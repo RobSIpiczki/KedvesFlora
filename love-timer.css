@@ -1,3 +1,4 @@
+
 body{text-align:center;
     font-family:monospace;
 background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);}
@@ -27,7 +28,7 @@ margin: 50px auto;
 border: 2px  black;
 box-shadow:5px 5px ;
 overflow:visible;}
-h2{font-size: 2em; margin-bottom: -5%}
+h2{font-size: 2em}
 
 #airplane {
     position: absolute;
@@ -47,7 +48,7 @@ h2{font-size: 2em; margin-bottom: -5%}
 #budapest-vector{
     position: absolute; 
     width: 150px; 
-    right: -70px; top: 130%; 
+    right: -70px; top: 110%; 
     transform: translateY(-50%);}
 #berlin-vector{
     position: absolute; 
@@ -63,7 +64,6 @@ h2{font-size: 2em; margin-bottom: -5%}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
-
 
 
 
