@@ -22,13 +22,12 @@ h2{font-size:2em;}
 #progress-container{position: relative;
 width: 70%;
 height: 200px;
-background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+/*background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);*/
 border-radius: 20%;
 margin: 20px auto 0 auto;
-border: 2px  black;
-box-shadow:5px 5px ;
+/*border: 2px  black;
+box-shadow:5px 5px ;*/
 overflow:visible;}
-#progress-container h2{margin-bottom:-5%}
 
 #airplane {
     position: absolute;
@@ -42,7 +41,7 @@ overflow:visible;}
     position:relative;
     height: 100%;
     display: block;
-    border-radius:25%;
+    border-radius:5%;
 }
 
 #budapest-vector{
@@ -64,5 +63,6 @@ overflow:visible;}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
 
 
