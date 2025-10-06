@@ -31,19 +31,17 @@ font-weight: bold;}
     overflow: visible;
 }
 
-/* CITY IMAGES LOWER */
 #budapest-vector,
 #berlin-vector {
-    position: absolute;
-    top: 70%;                    /* moves images lower */
-    transform: translateY(-50%); /* keeps them centered relative to top */
+    position: absolute;       /* fix them inside progress-container */
+    top: 110%;                 /* move them lower */
     width: clamp(100px, 15vw, 170px);
     height: auto;
+    transform: translateY(-50%); /* vertical center relative to top */
 }
 
-/* Left/right placement */
-#budapest-vector { right: 0; }
-#berlin-vector { left: 0; }
+#budapest-vector { right: 0; }  /* right edge */
+#berlin-vector { left: 0; }     /* left edge */
 
 /* AIRPLANE */
 #airplane {
@@ -69,6 +67,7 @@ header{margin-top:2rem;
 font-weight: bold;
 
 font-size: 1rem;}
+
 
 
 
