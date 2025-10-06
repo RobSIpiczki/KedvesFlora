@@ -27,7 +27,7 @@ margin: 50px auto;
 border: 2px  black;
 box-shadow:5px 5px ;
 overflow:visible;}
-#progress-container h2{margin-bottom:-5%}
+h2{font-size: 2em}
 
 #airplane {
     position: absolute;
@@ -63,5 +63,6 @@ overflow:visible;}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
 
 
