@@ -33,7 +33,7 @@ overflow:visible;}
     position: absolute;
     transform-origin: center center; /* make rotation pivot at center */
     display: inline-block;
-    font-size: clamp(3rem, 6vw, 6rem);;
+    font-size: 2rem;
 }
 
 
