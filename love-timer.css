@@ -24,7 +24,7 @@ width: 70%;
 height: 200px;
 background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 border-radius: 20%;
-margin: 50px auto;
+margin: 20px auto 0 auto;
 border: 2px  black;
 box-shadow:5px 5px ;
 overflow:visible;}
@@ -64,4 +64,5 @@ overflow:visible;}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
 
