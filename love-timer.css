@@ -1,99 +1,65 @@
-/* GLOBAL STYLES */
-body {
-    text-align: center;
-    font-family: monospace;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    margin: 0;
-    padding: 0;
-}
+body{text-align:center;
+    font-family:monospace;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);}
 
-/* TIMER & TIMEBOX */
-#timerDiv {
-    margin: 5vh auto 0 auto;
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    border: 2px solid rgba(148, 187, 233, 1);
-    border-radius: 20%;
-    display: inline-block;
-    padding: 5% 10%;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-}
+/*TIMER & TIMEBOX*/
 
-#timer {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: bold;
-}
+#timerDiv{margin: 5vh 0 0 0;
+background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);;
+border: 2px  rgba(148, 187, 233, 1);
+border-radius: 20%;
+display: inline-block;
+padding: 5% 10% 5% 10%;
+box-shadow: 10px 10px;}
 
-/* PROGRESS BAR */
-#progress-container {
-    position: relative;
-    width: 90%;
-    max-width: 600px;
-    height: clamp(150px, 25vh, 200px);
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    border-radius: 20%;
-    margin: 3rem auto;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-    overflow: visible;
-}
+#timer{font-family:monospace;
+font-size: 2em;
+font-weight: bold;}
 
-/* HEADER */
-header {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
+/*PROGRESS BAR*/
 
-/* AIRPLANE */
+#progress-container{position: relative;
+width: 70%;
+height: 200px;
+background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+border-radius: 20%;
+margin: 50px auto;
+border: 2px  black;
+box-shadow:5px 5px ;
+overflow:visible;}
+#progress-container h2{margin-bottom:-5%}
+
 #airplane {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
-    font-size: clamp(3rem, 6vw, 6rem);
-    transform: translate(-50%, -50%);
+    transform-origin: center center; /* make rotation pivot at center */
+    display: inline-block;
+    font-size: clamp(3rem, 6vw, 6rem);;
 }
 
-/* SVG PATH */
-#path-svg {
-    width: 100%;
+
+#path-svg{width: 100%;
+    position:relative;
     height: 100%;
     display: block;
-    border-radius: 25%;
+    border-radius:25%;
 }
 
-/* CITY VECTORS */
-.city-vector {
-    position: absolute;
-    width: clamp(100px, 15vw, 170px);
-    top: 100%;
-    transform: translateY(-50%);
-}
+#budapest-vector{
+    position: absolute; 
+    width: 150px; 
+    right: -70px; top: 110%; 
+    transform: translateY(-50%);}
+#berlin-vector{
+    position: absolute; 
+    width: 170px; 
+    left: -60px; top: 101%; 
+    transform: translateY(-50%);}
 
-#budapest-vector {
-    right: 0;
-}
 
-#berlin-vector {
-    left: 0;
-}
 
-/* TITLES */
-h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
 
-/* RESPONSIVE MEDIA QUERIES */
-@media (max-width: 768px) {
-    #timerDiv {
-        padding: 8% 12%;
-    }
 
-    #airplane {
-        font-size: clamp(2rem, 10vw, 4rem);
-    }
 
-    #progress-container {
-        height: clamp(120px, 20vh, 180px);
-    }
-}
+header{margin-top:2rem;
+font-weight: bold;
+font-size: 1rem;}
