@@ -33,7 +33,7 @@ overflow:visible;}
     position: absolute;
     transform-origin: center center; /* make rotation pivot at center */
     display: inline-block;
-    font-size: 2rem;
+    font-size: clamp(3rem, 6vw, 6rem);;
 }
 
 
@@ -63,3 +63,4 @@ overflow:visible;}
 header{margin-top:2rem;
 font-weight: bold;
 font-size: 1rem;}
+
