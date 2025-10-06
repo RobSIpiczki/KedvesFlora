@@ -27,17 +27,13 @@ margin: 50px auto;
 border: 2px  black;
 box-shadow:5px 5px ;
 overflow:visible;}
-
-#progress-container #airplane
-
 #progress-container h2{margin-bottom:-5%}
 
 #airplane {
     position: absolute;
     transform-origin: center center; /* make rotation pivot at center */
     display: inline-block;
-    font-size: clamp(3rem, 6vw, 6rem);
-    margin: 0;
+    font-size: clamp(3rem, 6vw, 6rem);;
 }
 
 
@@ -51,12 +47,12 @@ overflow:visible;}
 #budapest-vector{
     position: absolute; 
     width: 150px; 
-    right: -70px; top: 100%; 
+    right: -70px; top: 110%; 
     transform: translateY(-50%);}
 #berlin-vector{
     position: absolute; 
     width: 170px; 
-    left: -60px; top: 100%; 
+    left: -60px; top: 101%; 
     transform: translateY(-50%);}
 
 
