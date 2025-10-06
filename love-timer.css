@@ -36,7 +36,7 @@ font-weight: bold;}
 #berlin-vector {
     position: absolute;           /* fix them to the container */
     top: 50%;                     /* vertical center */
-    transform: translateY(-50%);  /* perfect vertical alignment */
+    transform: translateY(-150%);  /* perfect vertical alignment */
     width: clamp(100px, 15vw, 170px); 
     height: auto;
 }
@@ -50,7 +50,7 @@ font-weight: bold;}
     position: absolute;
     transform-origin: center center; /* make rotation pivot at center */
     display: inline-block;
-    font-size: 2rem;
+    font-size: clamp(3rem, 6vw, 6rem);
 }
 
 
@@ -68,6 +68,7 @@ header{margin-top:2rem;
 font-weight: bold;
 
 font-size: 1rem;}
+
 
 
 
