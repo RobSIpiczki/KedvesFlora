@@ -43,13 +43,15 @@ overflow:visible;}
     display: block;
     border-radius:25%;
 }
-#pics{display:flex;
-     position:relative;
-     width:clamp(100px, 15vw, 170px);
-     height:auto;
-     justify-content: space-betweeen;
-      object-fit:contain;
-     align-items:center;}
+#pics{
+    display:flex;
+    position:relative;
+    width:clamp(100px, 15vw, 170px);  /* THIS is way too small for 2 images */
+    height:auto;
+    justify-content: space-betweeen;  /* typo: should be space-between */
+    object-fit:contain;                /* object-fit doesn’t apply to divs */
+    align-items:center;
+}
 #budapest-vector{
     /*position: absolute; 
     width: 150px; 
@@ -70,5 +72,6 @@ header{margin-top:2rem;
 font-weight: bold;
 
 font-size: 1rem;}
+
 
 
