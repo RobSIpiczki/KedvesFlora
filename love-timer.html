@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveTimer</title>
+    <link rel="stylesheet" href="love-timer.css">
+</head>
+<body>
+    <header>
+        <h1>Kedves Flóra!</h1>
+    </header>
+    
+    
+    
+    <main>
+        <div id="timerDiv">
+            <h1>Már csak</h1>
+            <div id="timer"></div>
+            <h1>és újra látjuk egymást! 🥰</h1>
+        </div>
+
+        <div id="progress-container">
+            <h2>Már csak két megálló!🚏</h2>
+                <svg id="path-svg" viewBox="0 0 100 50" preserveAspectRatio="none">
+                    <path id="flight-path" d="M 0 50 Q 50 0 100 50" stroke="#FC466B" stroke-width="1" fill="transparent" stroke-dasharray="2 2"/>
+                </svg>
+                <div id="airplane">✈</div>
+                <div id="pics">
+                    <img src="berlin-nobg.png" alt="berlin vector" id="berlin-vector">
+                    <img id="budapest-vector" src="bp-nobg.png" alt="budapest vector">
+                 </div>
+        </div>
+        <script src="love-timer.js"></script>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
+

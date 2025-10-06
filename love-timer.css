@@ -1,0 +1,65 @@
+body{text-align:center;
+    font-family:monospace;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);}
+
+/*TIMER & TIMEBOX*/
+
+#timerDiv{margin: 5vh 0 0 0;
+background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);;
+border: 2px  rgba(148, 187, 233, 1);
+border-radius: 20%;
+display: inline-block;
+padding: 5% 10% 5% 10%;
+box-shadow: 10px 10px;}
+
+#timer{font-family:monospace;
+font-size: 2em;
+font-weight: bold;}
+
+/*PROGRESS BAR*/
+
+#progress-container{position: relative;
+width: 70%;
+height: 200px;
+background:radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+border-radius: 20%;
+margin: 50px auto;
+border: 2px  black;
+box-shadow:5px 5px ;
+overflow:visible;}
+#progress-container h2{margin-bottom:-5%}
+
+#airplane {
+    position: absolute;
+    transform-origin: center center; /* make rotation pivot at center */
+    display: inline-block;
+    font-size: 2rem;
+}
+
+
+#path-svg{width: 100%;
+    position:relative;
+    height: 100%;
+    display: block;
+    border-radius:25%;
+}
+
+#budapest-vector{
+    position: absolute; 
+    width: 150px; 
+    right: -70px; top: 110%; 
+    transform: translateY(-50%);}
+#berlin-vector{
+    position: absolute; 
+    width: 170px; 
+    left: -60px; top: 101%; 
+    transform: translateY(-50%);}
+
+
+
+
+
+
+header{margin-top:2rem;
+font-weight: bold;
+font-size: 1rem;}
