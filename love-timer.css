@@ -43,25 +43,22 @@ overflow:visible;}
     display: block;
     border-radius:25%;
 }
-#pics{
-    display:flex;
-    position:relative;
-    width:clamp(100px, 15vw, 170px);  /* THIS is way too small for 2 images */
-    height:auto;
-    justify-content: space-betweeen;  /* typo: should be space-between */
-    object-fit:contain;                /* object-fit doesn’t apply to divs */
-    align-items:center;
+#pics {
+    display: flex;
+    position: absolute;         /* position relative to progress-container */
+    top: 50%;                   /* vertical center */
+    left: 0;
+    width: 100%;                /* full width of container */
+    transform: translateY(-50%); /* perfect vertical centering */
+    justify-content: space-between; /* spread images to edges */
+    align-items: center;        /* vertical alignment */
 }
-#budapest-vector{
-    /*position: absolute; 
-    width: 150px; 
-    right: -70px; top: 110%;*/ 
-    transform: translateY(-50%);}
-#berlin-vector{
-    /*position: absolute; 
-    width: 170px; 
-    left: -60px; top: 110%;*/
-    transform: translateY(-50%);}
+
+#pics img {
+    width: clamp(100px, 15vw, 170px); /* scales proportionally */
+    height: auto;
+    flex-shrink: 0;                   /* prevents shrinking */
+}
 
 
 
@@ -72,6 +69,7 @@ header{margin-top:2rem;
 font-weight: bold;
 
 font-size: 1rem;}
+
 
 
 
