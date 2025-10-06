@@ -52,7 +52,7 @@ overflow:visible;}
 #berlin-vector{
     position: absolute; 
     width: 170px; 
-    left: -60px; top: 101%; 
+    left: -60px; top: 110%; 
     transform: translateY(-50%);}
 
 
@@ -62,4 +62,5 @@ overflow:visible;}
 
 header{margin-top:2rem;
 font-weight: bold;
+
 font-size: 1rem;}
