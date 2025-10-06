@@ -31,26 +31,22 @@ function updateTimer(simDate = null) {
 function moveAirplane(progress) {
     const point = path.getPointAtLength(progress * pathLength);
 
-    // Get container's SVG rectangle
-    const rect = svg.getBoundingClientRect();
+    // Map SVG coords to container pixels
+    const svgWidth = svg.clientWidth;
+    const svgHeight = svg.clientHeight;
 
-    // Scale point to container dimensions
-    const x = (point.x / svg.viewBox.baseVal.width) * rect.width;
-    const y = (point.y / svg.viewBox.baseVal.height) * rect.height;
+    const x = (point.x / svg.viewBox.baseVal.width) * svgWidth;
+    const y = (point.y / svg.viewBox.baseVal.height) * svgHeight;
 
-    // Tangent for rotation (1% of path length)
+    // Tangent for rotation
     const deltaLength = pathLength * 0.01;
-    let nextLength = progress * pathLength + deltaLength;
-    if (nextLength > pathLength) nextLength = pathLength;
+    let nextLength = Math.min(progress * pathLength + deltaLength, pathLength);
     const nextPoint = path.getPointAtLength(nextLength);
-
-    const nextX = (nextPoint.x / svg.viewBox.baseVal.width) * rect.width;
-    const nextY = (nextPoint.y / svg.viewBox.baseVal.height) * rect.height;
+    const nextX = (nextPoint.x / svg.viewBox.baseVal.width) * svgWidth;
+    const nextY = (nextPoint.y / svg.viewBox.baseVal.height) * svgHeight;
 
     const angle = Math.atan2(nextY - y, nextX - x) * (180 / Math.PI);
 
-    // Position airplane relative to container
-    const containerRect = container.getBoundingClientRect();
     airplane.style.left = `${x}px`;
     airplane.style.top = `${y}px`;
     airplane.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
@@ -86,4 +82,5 @@ function simulateFlight(simDate) {
 
 // Start real-time animation
 animate();
+
 
