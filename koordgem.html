@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Koordinátageometria Cheat Sheet</title>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.5; }
+pre { background-color: #f4f4f4; padding: 5px; }
+ul { margin: 0; padding-left: 20px; }
+</style>
+</head>
+<body>
+
+<h1>📝 Koordinátageometria Cheat Sheet – Teljes</h1>
+
+<h2>1️⃣ Felezőpont</h2>
+<p><strong>Képlet:</strong></p>
+<pre>F(x, y) = ((x1 + x2)/2 , (y1 + y2)/2)</pre>
+<p><strong>Lépéssablon:</strong></p>
+<ul>
+<li>Összeadod az x-koordinátákat → osztod 2-vel</li>
+<li>Összeadod a y-koordinátákat → osztod 2-vel</li>
+<li>Írod F(x; y)</li>
+</ul>
+<p><strong>Minta 1:</strong> A(2;7), B(11;10) → F(6,5; 8,5)</p>
+<p><strong>Minta 2:</strong> A(-4;4), B(5;-7) → F(0,5; -1,5)</p>
+<p><strong>Gyakori hiba:</strong> Jelek figyelmen kívül hagyása</p>
+
+<hr>
+
+<h2>2️⃣ Pont meghatározása felezőpontból</h2>
+<pre>B = 2F - A  &nbsp;&nbsp;⇒ Bx = 2Fx - Ax, By = 2Fy - Ay</pre>
+<p><strong>Minta 1:</strong> A(2;7), F(6,5;8,5) → B(11;10)</p>
+<p><strong>Minta 2:</strong> A(-4;4), F(5;-7) → B(14;-18)</p>
+<p><strong>Gyakori hiba:</strong> Negatív számok rossz kezelése</p>
+
+<hr>
+
+<h2>3️⃣ Két pont távolsága</h2>
+<pre>AB = sqrt((x2 - x1)^2 + (y2 - y1)^2)</pre>
+<p><strong>Minta 1:</strong> A(2;7), B(11;10) → √90</p>
+<p><strong>Minta 2:</strong> A(-4;4), B(5;-7) → √202</p>
+<p><strong>Gyakori hiba:</strong> Negatív előjelek figyelmen kívül hagyása</p>
+
+<hr>
+
+<h2>4️⃣ Egyenesek</h2>
+<p><strong>Általános alak:</strong> ax + by + c = 0</p>
+<p><strong>Meredekség:</strong> m = -a/b (ha b ≠ 0)</p>
+<p><strong>Két ponton átmenő:</strong> y - y1 = m(x - x1)</p>
+
+<h3>Párhuzamos egyenes</h3>
+<p>Ugyanaz a normálvektor (a,b), c = ax0 + by0</p>
+<p>Minta: 5x + 4y = -51 párhuzamos, P(-4,-7) → 5x+4y=-48</p>
+
+<h3>Merőleges egyenes</h3>
+<p>Normálvektor 90°-kal elforgatva: (a,b) ⟂ (b,-a) vagy m2=-1/m1</p>
+<p>Minta: 4x-4y=-51, P(-7,5) → -4x-4y=8 → egyszerűsítve x+y=-2</p>
+<p><strong>Gyakori hibák:</strong> Negatív reciprok hibás számítása, normálvektor jele rossz</p>
+
+<hr>
+
+<h2>5️⃣ Metszéspont két egyenes között</h2>
+<p>Lépéssablon:</p>
+<ul>
+<li>Oldd meg az egyenletrendszert: behelyettesítés vagy összeadás</li>
+<li>Számold ki x-et</li>
+<li>Számold ki y-t</li>
+</ul>
+<p>Minta 1: -4x+4y=48 és 5x-7y=-122 → (19;31)</p>
+<p>Minta 2: 2x+7y=313 és 11x+10y=1066 → (76;23)</p>
+<p><strong>Gyakori hiba:</strong> Jelek figyelmen kívül hagyása, összeadási módszer hibája</p>
+
+<hr>
+
+<h2>6️⃣ Kör</h2>
+<p>Középpont és sugár: (x-x0)^2 + (y-y0)^2 = r^2</p>
+<p>Átmérős kör: Középpont = felezőpont, r = AB/2</p>
+<p>Minta 1: C(2;7), r=11 → (x-2)^2 + (y-7)^2 = 121</p>
+<p>Minta 2: A(-4;4), B(5;-7) → (x-0,5)^2 + (y+1,5)^2 = 50,5</p>
+<p><strong>Gyakori hiba:</strong> Sugár helytelen számítása, negatív koordináták hibás kezelése</p>
+
+<hr>
+
+<h2>7️⃣ Vizsgatippek</h2>
+<ul>
+<li>Mindig írd fel a képletet + behelyettesítést → pontok a dolgozatban</li>
+<li>Ellenőrizd a jeleket</li>
+<li>Negatív számoknál figyelj a négyzetre emelésnél</li>
+<li>Gyors becsléshez: meredekség negatív reciproka, középpont felezőpont</li>
+</ul>
+
+</body>
+</html>
