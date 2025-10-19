@@ -19,20 +19,20 @@ ul { margin: 0; padding-left: 20px; }
    ">
     <button type="button"
         style="
-            padding: 30px 60px;
-            font-size: 48px;
-            border-radius: 36px;
-            background-color: #FC466B;
+            padding: 20px 40px;
+            font-size: 32px;
+            border-radius: 24px;
+            background-color: #888888;  /* neutral gray */
             color: white;
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0,0,0,0.2);
             transition: transform 0.2s, background-color 0.2s;
         "
-        onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#FF6B91';"
-        onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#FC466B';"
+        onmouseover="this.style.transform='scaleY(-1) scale(1.05)'; this.style.backgroundColor='#AAAAAA';"
+        onmouseout="this.style.transform='scaleY(-1) scale(1)'; this.style.backgroundColor='#888888';"
     >
-        🔙
+        <span style="display:inline-block; transform: scaleY(-1);">🛫</span>
     </button>
 </a>
   
@@ -117,5 +117,6 @@ ul { margin: 0; padding-left: 20px; }
 
 </body>
 </html>
+
 
 
